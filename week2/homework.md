@@ -90,11 +90,11 @@ Start by defining these routes and returning their results as described here:
 
 | Route                | Description                                                           |
 | -------------------- | --------------------------------------------------------------------- |
-| `/meals/{id}`        | Respond with the json for the meal with the corresponding `id`        |
+| `/meals/:id`        | Respond with the json for the meal with the corresponding `id`        |
 | `/meals`             | Respond with the json for all the meals                               |
-| `/reservations/{id}` | Respond with the json for the reservation with the corresponding `id` * |
+| `/reservations/:id` | Respond with the json for the reservation with the corresponding `id` * |
 | `/reservations`      | Respond with the json for all reservations *                            |
-| `/reviews/{id}`      | Respond with the json for the review with the corresponding `id` *       |
+| `/reviews/:id`      | Respond with the json for the review with the corresponding `id` *       |
 | `/reviews`           | Respond with the json for all reviews *                                 |
 
 \* To make the reservations and reviews routes working create a new reservations and reviews router, add the routers in the `app.js` file and add the `reservations.json` and `reviews.json` file. Follow how it was done for the meals router.
